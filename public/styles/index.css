@@ -168,7 +168,7 @@ body {
 .like-sign {
   color: transparent;
   text-shadow: 0 0 0 #32A23D;
-  vertical-align: middle; }
+  vertical-align: text-bottom; }
 
 .like-text {
   vertical-align: text-top; }
