@@ -13,6 +13,9 @@ $(document).ready(async () => {
 
     renderMovies(moviesData, filter)
 
+    $('.main-movie-img-container').addClass('animate__animated animate__zoomInLeft')
+    $('.main-movie-title-likes-container').addClass('animate__animated animate__zoomInRight')
+
     $('#main-sort-container__select').on('change', () => {
         filter = $('#main-sort-container__select').val()
         renderMovies(moviesData, filter)
@@ -32,9 +35,10 @@ $(document).ready(async () => {
         // renderMovies(moviesData, filter)
     })
 
-    $(document).on('click', '.main-movie-img-container__img', (e) => {
+    $(document).on('click', '.main-movie-img-container', (e) => {
         console.log(e.target.parentNode)
-        $(e.target.parentNode).addClass('animate__animated animate__hinge')
+        $(e.target.parentNode).removeClass('animate__animated animate__zoomInLeft')
+        $(e.target.parentNode).addClass('animate__animated animate__heartBeat')
     })
 
 })
