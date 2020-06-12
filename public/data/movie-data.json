@@ -1,0 +1,63 @@
+{
+"results": [
+    {
+      "id": 339095,
+      "likes": 5,
+      "title": "The Last Days of American Crime",
+      "release_date": "2020-06-05",
+      "original_language": "en",
+      "img": "img/the-last-days.jpg",
+      "shortenOverview": true, 
+      "overview": "In the not-too-distant future, where as a final response to crime and terrorism, the U.S. government plans to broadcast a signal that will make it impossible for anyone to knowingly break the law."
+    },
+    {
+        "id": 38700,
+      "likes": 4,
+      "title": "Bad Boys for Life",
+      "release_date": "2020-01-15",
+      "original_language": "en",
+      "img": "img/bad-boys.jpg",
+      "shortenOverview": true, 
+      "overview": "Marcus and Mike are forced to confront new threats, career changes, and midlife crises as they join the newly created elite team AMMO of the Miami police department to take down the ruthless Armando Armas, the vicious leader of a Miami drug cartel.",
+      "poster_path": "/y95lQLnuNKdPAzw9F9Ab8kJ80c3.jpg"
+    }, 
+    {
+        "id": 664413,
+      "likes": 6,
+      "title": "365 Days",
+      "release_date": "2020-02-07",
+      "original_language": "pl",
+      "img": "img/365-days.jpg",
+      "shortenOverview": true, 
+      "overview": "Laura, in order to save her relationship from falling apart, goes to Sicily, where she meets Massimo. A dangerous man, the head of a mafia family, kidnaps her and gives her 365 days to fall in love with him.",
+      "poster_path": "/ibaDBJBAvWd4J5lzfbpq1PJ6ZU1.jpg"
+    }, {
+        "id": 454626,
+      "likes": 8,
+      "title": "Sonic the Hedgehog",
+      "release_date": "2020-02-12",
+      "original_language": "en",
+      "img": "img/sonic.jpg",
+      "shortenOverview": true, 
+      "overview": "Based on the global blockbuster videogame franchise from Sega, Sonic the Hedgehog tells the story of the world’s speediest hedgehog as he embraces his new home on Earth. In this live-action adventure comedy, Sonic and his new best friend team up to defend the planet from the evil genius Dr. Robotnik and his plans for world domination."
+    }, {
+        "id": 508439,
+      "likes": 7,
+      "title": "Onward",
+      "release_date": "2020-02-29",
+      "original_language": "en",
+      "img": "img/onward.jpg",
+      "shortenOverview": true, 
+      "overview": "In a suburban fantasy world, two teenage elf brothers embark on an extraordinary quest to discover if there is still a little magic left out there."
+    }, {
+        "id": 299534,
+      "likes": 9,
+      "title": "Avengers: Endgame",
+      "release_date": "2019-04-24",
+      "original_language": "en",
+      "img": "img/avengers.jpg",
+      "shortenOverview": true, 
+      "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store."
+    }
+]
+}

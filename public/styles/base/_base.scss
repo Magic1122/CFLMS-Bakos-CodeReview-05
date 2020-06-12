@@ -1,0 +1,17 @@
+/* Basic settings */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* It sets 1rem to 10px if the user is using the browser default settings, makes it easier to calculate with */
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
