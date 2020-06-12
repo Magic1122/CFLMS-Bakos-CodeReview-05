@@ -90,3 +90,4 @@ const toggleDescriptionText = (movies, id) => {
     console.log(movie)
     renderMovies(moviesData, filter)
 }
+

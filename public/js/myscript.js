@@ -41,5 +41,5 @@ $(document).ready(async () => {
         $(e.target.parentNode).addClass('animate__animated animate__heartBeat')
         $(e.target.parentNode).css('cursor', 'default')
     })
-
 })
+
