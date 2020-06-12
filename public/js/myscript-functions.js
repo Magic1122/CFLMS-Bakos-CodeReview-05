@@ -9,20 +9,23 @@ const loadMovies = async () => {
 // Generate the DOM structure for a movie
 
 const generateMovieDOM = (movie, shortenOverview) => {
-    const overview = shortenOverview ? `${movie.overview.substring(0, 38)}...` : movie.overview
-    /* Creating NODES */
+    /* The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables. */
+    const { img, title, id, overview } = movie
+    /* Decides regarding the shortenOverview property if we want to cut the text or not */
+    const overviewText = shortenOverview ? `${overview.substring(0, 38)}...` : overview
+    /* Creating movie element HTML */
     const movieElementHTML =
         `<div class='main-movie-container'>
                         <div class='main-movie-img-container' id="main-movies-img-container">
-                            <img class='main-movie-img-container__img' src='${movie.img}'>
+                            <img class='main-movie-img-container__img' src='${img}'>
                         </div>
                         <div class="main-movie-title-likes-container" id="main-movies-title-likes-container">
                             <div class='main-movie-title-container'>
-                                <p class='main-movie-title-container__title'>${movie.title}</p>
-                                <p class='main-movie-title-container__description' movieId="${movie.id}">${overview}</p>
+                                <p class='main-movie-title-container__title'>${title}</p>
+                                <p class='main-movie-title-container__description' movieId="${id}">${overviewText}</p>
                             </div>
                             <div class='main-movie-likes-container'>
-                                <p class='main-movie-likes-container__text'><span movieId="${movie.id}" class="main-movie-likes-container__like-button"><span class='like-text' movieId="${movie.id}">Like </span><span class="like-sign" movieId="${movie.id}">👍</span></span><span class='main-movie-likes-container__likes-number'>${movie.likes}</span></p>
+                                <p class='main-movie-likes-container__text'><span movieId="${id}" class="main-movie-likes-container__like-button"><span class='like-text' movieId="${id}">Like </span><span class="like-sign" movieId="${id}">👍</span></span><span class='main-movie-likes-container__likes-number'>${movie.likes}</span></p>
                             </div>
                         </div>
                     </div>`
@@ -30,7 +33,7 @@ const generateMovieDOM = (movie, shortenOverview) => {
     return movieElementHTML
 }
 
-//Sort your movies by one of two ways
+//Sort your movies by one of two ways (by likes or by number)
 
 const sortMovies = (movies, sortBy) => {
     if (sortBy === 'byLike') {
@@ -50,19 +53,17 @@ const sortMovies = (movies, sortBy) => {
     }
 }
 
-// Render Movies
+// Render Movies (it takes an array and our filter(sort by) and renders the movie elements to the DOM)
 
 const renderMovies = (movies, filter) => {
     const moviesEl = $('#main-movies-container')
     movies = sortMovies(movies, filter)
-    // console.log('MOVIES', movies)
 
     moviesEl.html('')
 
     if (movies.length > 0) {
         movies.forEach((movie) => {
             const movieEl = generateMovieDOM(movie, movie.shortenOverview)
-            // console.log('movielEL', movieEl)
             moviesEl.append(movieEl)
         })
     } else {
@@ -70,14 +71,12 @@ const renderMovies = (movies, filter) => {
     }
 }
 
-// Adds likes
+// Adds likes (it finds the item from our movies array and adds one like by each call to the original value)
 
 const addLike = (movies, id) => {
     const movie = movies.find((movie) => movie.id === id)
     if (movie.likes < 100) {
         movie.likes++
-        console.log(movie)
-        console.log(movies)
         renderMovies(moviesData, filter)
     }
 }
@@ -87,7 +86,5 @@ const addLike = (movies, id) => {
 const toggleDescriptionText = (movies, id) => {
     const movie = movies.find((movie) => movie.id === id)
     movie.shortenOverview = !movie.shortenOverview
-    console.log(movie)
     renderMovies(moviesData, filter)
 }
-
