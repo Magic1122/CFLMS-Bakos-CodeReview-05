@@ -1,0 +1,146 @@
+/* Basic settings */
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  /* It sets 1rem to 10px if the user is using the browser default settings, makes it easier to calculate with */ }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin: 0 auto; }
+
+.main-header {
+  width: 100%;
+  background: #000000;
+  padding: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; }
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  background: #454545;
+  list-style: none;
+  display: flex; }
+  .main-nav__items .main-nav__item {
+    margin: 0 0 0 1.4rem; }
+  .main-nav__items .main-nav__item-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold; }
+
+.main-footer {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  font-size: 2.4rem; }
+  .main-footer .main-footer__title {
+    color: #fff; }
+
+.main-content {
+  background-color: #1D2329;
+  color: #fff;
+  padding: 1.6rem;
+  padding-bottom: 19.2rem; }
+  @media (max-width: 830px) {
+    .main-content {
+      padding-bottom: 4.8rem; } }
+
+.main-sort-title-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.main-sort-title-container__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 1.4rem 0 4.8rem 0; }
+
+.main-sort-container {
+  padding-right: 1.4rem;
+  width: 48%;
+  text-align: right;
+  margin: 1.4rem 0 4.8rem 0;
+  font-size: 1.8rem; }
+
+.main-sort-container__select {
+  padding: 0.7777777778rem;
+  border: none;
+  background-color: #1D2329;
+  color: #fff;
+  font-size: 1.8rem; }
+  .main-sort-container__select:hover {
+    cursor: pointer; }
+  .main-sort-container__select:focus {
+    outline: none; }
+
+.main-movie-title-container__description {
+  cursor: pointer; }
+
+.main-movies-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.6rem; }
+  @media (max-width: 1580px) {
+    .main-movies-container {
+      grid-template-columns: 1fr;
+      grid-gap: 4.8rem; } }
+
+.main-movie-container {
+  background-color: #181818;
+  display: flex;
+  padding: 1.4rem; }
+  @media (max-width: 830px) {
+    .main-movie-container {
+      display: block;
+      text-align: center; } }
+
+.main-movie-title-likes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1.6rem;
+  width: 100%; }
+
+.main-movie-title-container__title {
+  font-size: 2.4rem;
+  font-weight: 700; }
+
+.main-movie-likes-container {
+  width: 100%;
+  text-align: right; }
+
+.main-movie-likes-container__like-button {
+  color: #32A23D;
+  padding-right: 1.4rem;
+  cursor: pointer; }
+
+.main-movie-likes-container__text {
+  font-size: 1.8rem; }
+
+.main-movie-likes-container__likes-number {
+  background-color: #32A23D;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem;
+  border-radius: 50%;
+  width: 49.8px;
+  height: 49.8px; }
+
+/* To fix the alignment of the like text and like symbol */
+.like-sign {
+  color: transparent;
+  text-shadow: 0 0 0 #32A23D;
+  vertical-align: middle; }
+
+.like-text {
+  vertical-align: text-top; }
+
+/*# sourceMappingURL=index.css.map */

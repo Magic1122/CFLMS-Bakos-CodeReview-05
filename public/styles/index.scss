@@ -1,0 +1,126 @@
+@import "./base/settings";
+@import "./base/base";
+@import "./partials/shared";
+
+.main-content {
+  background-color: $blue-grey;
+  color: $white;
+  padding: $m-size;
+  padding-bottom: $xl-size * 4;
+
+  @media (max-width: 830px) {
+    padding-bottom: $xl-size;
+  }
+}
+
+.main-sort-title-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main-sort-title-container__title {
+  font-size: $font-size-large;
+  font-weight: bold;
+  margin: $s-size 0 $xl-size 0;
+}
+.main-sort-container {
+  padding-right: $s-size;
+  width: 48%;
+  text-align: right;
+  margin: $s-size 0 $xl-size 0;
+  font-size: $font-size-medium
+}
+
+.main-sort-container__select {
+    padding: $s-size / 1.8;
+    border: none;
+    background-color: $blue-grey;
+    color: $white;
+    font-size: $font-size-medium;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+}
+
+.main-movie-title-container__description {
+  cursor: pointer;
+}
+
+.main-movies-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $m-size;
+
+  @media (max-width: 1580px) {
+    grid-template-columns: 1fr;
+    grid-gap: $xl-size;
+  }
+}
+
+.main-movie-container {
+  background-color: $black-lighter;
+  display: flex;
+  padding: $s-size;
+
+  @media (max-width: 830px) {
+    display: block;
+    text-align: center;
+  }
+}
+
+.main-movie-title-likes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: $m-size;
+  width: 100%;
+}
+
+.main-movie-title-container__title {
+  font-size: $font-size-large;
+  font-weight: 700;
+}
+
+.main-movie-likes-container {
+  width: 100%;
+  text-align: right;
+}
+
+.main-movie-likes-container__like-button {
+  color: $green;
+  padding-right: $s-size;
+  cursor: pointer;
+}
+
+.main-movie-likes-container__text {
+  font-size: $font-size-medium;
+}
+
+.main-movie-likes-container__likes-number {
+  background-color: $green;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: $m-size;
+  border-radius: 50%;
+  width: 49.8px;
+  height: 49.8px;
+}
+
+/* To fix the alignment of the like text and like symbol */
+
+.like-sign {
+  color: transparent;
+  text-shadow: 0 0 0 $green;
+  vertical-align: middle;
+}
+
+.like-text {
+    vertical-align: text-top;
+}

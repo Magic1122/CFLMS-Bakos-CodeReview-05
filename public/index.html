@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>CodeReview 5</title>
 </head>
+
 <body>
     <header class="main-header">
         <div class="main-header__title-container">
-          <h1 class="main-header__title">Movie Factory</h1>
+            <h1 class="main-header__title">Movie Factory</h1>
         </div>
-        <nav class="main-nav">
-            <ul class="main-nav__items">
-              <li class="main-nav__item">
+    </header>
+    <nav class="main-nav">
+        <ul class="main-nav__items">
+            <li class="main-nav__item">
                 <a class="main-nav__item-link" href="index.html">Home</a>
-              </li>
-            </ul>
-          </nav>
-      </header>
-      <main class="main-content">
-          <section class="main-sort-title-container">
-              <div class="main-sort-title-container">
-                  <p class="main-sort-title-container__title">Movies</p>
-              </div>
-              <div class="main-sort-container">
-                  <select name="" id="main-sort-container__select" class="main-sort-container__select">
-                      <option value="byLike">By Likes</option>
-                      <option value="byTitle">By Title</option>
-                  </select>
-              </div>
-          </section>
-          <section class="main-movies-container" id="main-movies-container">
-          </section>
-      </main>
-      <footer class="main-footer">
+            </li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <section class="main-sort-title-container">
+            <div class="main-sort-title-container">
+                <p class="main-sort-title-container__title">Movies</p>
+            </div>
+            <div class="main-sort-container">
+                <label for="main-sort-container__select">Sort by: </label>
+                <select name="" id="main-sort-container__select" class="main-sort-container__select">
+                    <option value="byLike">Likes</option>
+                    <option value="byTitle">Title</option>
+                </select>
+            </div>
+        </section>
+        <section class="main-movies-container" id="main-movies-container"></section>
+    </main>
+    <footer class="main-footer">
         <div class="main-footer__title-container">
-          <p class="main-footer__title">Movie Factory</p>
+            <p class="main-footer__title">Movie Factory</p>
         </div>
-      </footer>
+    </footer>
 </body>
-    <script src="./js/myscript-functions.js"></script>
-    <script src="./js/myscript.js"></script>
+<script src="./js/myscript-functions.js"></script>
+<script src="./js/myscript.js"></script>
+
 </html>

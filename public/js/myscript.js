@@ -19,17 +19,17 @@ $(document).ready(async () => {
     })
 
 
-    $(document).on('click', '.like-button', (e) => {
+    $(document).on('click', '.main-movie-likes-container__like-button', (e) => {
         const id = parseInt($(e.target).attr('movieID'))
         addLike(moviesData, id)
-        renderMovies(moviesData, filter)
+        // renderMovies(moviesData, filter)
     })
 
-    $(document).on('click', '.main-movies-title-container__description', (e) => {
+    $(document).on('click', '.main-movie-title-container__description', (e) => {
         console.log(e)
         const id = parseInt($(e.target).attr('movieID'))
         toggleDescriptionText(moviesData, id)
-        renderMovies(moviesData, filter)
+        // renderMovies(moviesData, filter)
     })
 
 })
