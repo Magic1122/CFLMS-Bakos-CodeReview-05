@@ -39,6 +39,7 @@ $(document).ready(async () => {
         console.log(e.target.parentNode)
         $(e.target.parentNode).removeClass('animate__animated animate__zoomInLeft')
         $(e.target.parentNode).addClass('animate__animated animate__heartBeat')
+        $(e.target.parentNode).css('cursor', 'default')
     })
 
 })
