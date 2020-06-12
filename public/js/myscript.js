@@ -32,4 +32,9 @@ $(document).ready(async () => {
         // renderMovies(moviesData, filter)
     })
 
+    $(document).on('click', '.main-movie-img-container__img', (e) => {
+        console.log(e.target.parentNode)
+        $(e.target.parentNode).addClass('animate__animated animate__hinge')
+    })
+
 })

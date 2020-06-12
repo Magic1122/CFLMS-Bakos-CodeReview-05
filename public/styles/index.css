@@ -122,6 +122,9 @@ body {
       display: block;
       text-align: center; } }
 
+.main-movie-img-container__img {
+  cursor: pointer; }
+
 .main-movie-title-likes-container {
   display: flex;
   flex-direction: column;
