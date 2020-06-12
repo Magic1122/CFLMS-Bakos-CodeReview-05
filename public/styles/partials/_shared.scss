@@ -16,8 +16,16 @@
   list-style: none;
   display: flex;
 
+  @media (max-width: 830px) {
+    justify-content: center;
+  }
+
   .main-nav__item {
     margin: 0 0 0 $s-size;
+
+    @media (max-width: 830px) {
+      margin: 0;
+    }
   }
 
   .main-nav__item-link {

@@ -17,18 +17,36 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  @media (max-width: 830px) {
+    display: block;
+  }
 }
 .main-sort-title-container__title {
   font-size: $font-size-large;
   font-weight: bold;
-  margin: $s-size 0 $xl-size 0;
+  margin: 0 0 $xl-size 0;
+
+  @media (max-width: 830px) {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+  }
 }
+
 .main-sort-container {
   padding-right: $s-size;
   width: 48%;
   text-align: right;
   margin: $s-size 0 $xl-size 0;
-  font-size: $font-size-medium
+  font-size: $font-size-medium;
+
+  @media (max-width: 830px) {
+    width: auto;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 $l-size 0;
+  }
 }
 
 .main-sort-container__select {
